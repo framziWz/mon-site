@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  transition: all 0.2s linear;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box; /* Ajout pour éviter des problèmes de boîte */
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7em;
+  scroll-behavior: smooth;
+}
+body{
+  position: relative;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 8%;
+  height: 50px;
+  box-shadow: 0 0 10px #42445AE8;
+}
+header .logo{
+  color: orangered;
+  font-size: 25px;
+  font-weight: bold;
+}
+header .logo span{
+  color: #000000;
+}
+.menu{
+  display: flex;
+}
+.menu li{
+  list-style: none;
+  margin: 0 15px;
+}
+.menu li a{
+  font-size: 14px;
+  color: #000000;
+  font-weight: 350;
+  transition: 0,2s;
+  text-transform: capitalize;
+}
+.menu li a:hover{
+  color: #FF2222;
+}
+header button{
+  background-color: #0B136A;
+  cursor: pointer;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 8px;
+}
+#home{
+  margin-top: 45px;
+  margin-bottom: 20px;
+  height: calc(100vh - 90px);
+  padding: 0 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #0EC5EC73;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+
+/*scrollbar css*/
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: orangered;
+}
+
+#home .lef{
+  width: 20%;
+}
+#home .left h1{
+  font-size: 35px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+#home .left h1 span{
+  color: orangered;
+}
+#home .left p{
+  margin-bottom: 30px;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+}
+#home .left a{
+  background-color: orangered;
+  padding: 10px 10px;
+  font-size: 14px;
+  color: white;
+  transition: 0,5s;
+  border-radius: 8px;
+}
+#home .left a:hover{
+  background-color: black;
+}
+#home .right{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home .right img{
+  width: 100%;
+}
+.marquee-container {
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+.marquee-text {
+  white-space: nowrap;
+  display: inline-block;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+#Articles{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('/wz/images/texture blanche.jpg')
+}
+/* Style des titres de sections */
+.section_title {
+  border: none; /* Supprimer l'encadrement */
+  text-transform: capitalize; /* Mettre la première lettre en majuscule pour chaque mot */
+}
+.images{
+  margin-top:30px;
+  padding: 0 8%;
+}
+.images ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.images li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2,665%;
+  transition: 0,5s;
+  height: 450px;
+  width: 33%;
+}
+.images li div{
+  width: 250px;
+  height: 71%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px #0000007A;
+}
+.images li div img{
+  height: 100%;
+  width: 100%;
+}
+
+.images li:hover{
+  transform: scale(1.1);
+  margin: 20px;
+}
+.images li span{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+#Articles li span.prix{
+  color: #11A422;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#Articles li a{
+  background-color: orangered;
+  color: white;
+  padding:10px 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+#services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.section_title {
+  text-align: center;
+  
+}
+.list_services {
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url('/wz/images/texture blanche.jpg');
+}
+.service {
+  width: 33%; /* Largeur ajustée */
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0 0 5px #0606078A;
+  padding: 20px;
+  margin: 20px;
+  background-image: url('/wz/images/Acc_1.jpg')
+}
+.service i {
+  font-size: 25px;
+  height: 10px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-bottom: 10px;
+}
+.service h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.service p {
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+
+/* Styles pour le carrousel d'images */
+.slider-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  background-image: url('/wz/images/texture blanche.jpg');
+}
+#image-slider {
+  margin-top: 29px;
+  overflow: hidden;
+  
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 35%;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-radius: 30px;
+  
+  /* Ajout de l'espacement entre les images */
+}
+.section_subtitle {
+  margin-top: 0px;
+  text-align: center;
+  color: #FF4141;
+}
+footer{
+  background-color: orangered;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+}
+.menu-toggle{
+  display: none;
+}
+/*responsive*/
+@media (max-width:682px) {
+  header{
+  padding: 0 6px;
+  }
+  header .menu{
+    display: none;
+  }
+  #home{
+    padding: 0 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #home .lef , #home .right{
+    width: 100%;
+  }
+  .right{
+    margin-top: 50px;
+    width: 60px;
+  }
+  .images li{
+    width: 100%;
+  }
+  #services{
+    padding: 0 10px;
+  }
+  .service{
+    width: 100%;
+  }
+  #contact{
+    height: auto;
+  }
+  .form_contact{
+    width: 90%;
+  }
+  .menu-toggle{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .menu-toggle span{
+    width: 35px;
+    background-color: orangered;
+    height: 5px;
+    border-radius: 6px;
+    transition: 0,5s;
+  }
+  .menu-toggle span.active{
+    width: 0px;
+  }
+  .menu-toggle::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: orangered;
+    transform: translateY(10px);
+    border-radius: 6px;
+    transition: 0,5s;
+  }
+  .menu-toggle.active::before{
+    width: 28px;
+    transform: rotate(42deg)
+  }
+  .menu-toggle::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: orangered;
+    transform: translateY(-10px);
+    border-radius: 6px;
+    transition: 0, 5s;
+  }
+  .menu-toggle.active::after {
+    width: 28px;
+    transform: rotate(-42deg)
+  }
+  header .menu.responssive{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 0;
+    background-color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white
+  }
+ .whatsapp-logo {
+  background: url('/wz/images/Whatsapp.png') no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: cover;
+  cursor: pointer;
+  }
+}
+body {
+  text-transform: lowercase;
+   }
+#services .section_title {
+  text-align: center;
+  font-style: italic;
+   }
+  .section {
+  margin-bottom: 50px; 
+  }
+   .marquee {
+  margin-bottom: 30px;
+  }
+
+@keyframes scrollTitle {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+ 
+}
+
+
+  .section_title {
+    border-top: 1px solid orangered;
+    border-bottom: 1px solid orangered;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+/* Ajoutez ces styles pour centrer les boutons des réseaux sociaux */
+#social-media {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les icônes */
+}
+
+/* Ajoutez des styles personnalisés pour chaque icône */
+.social-icon i {
+  font-size: 2em; /* Taille des icônes */
+}
+
+/* Styles spécifiques pour chaque réseau social */
+.tiktok i {
+  color: #69C9D0; /* Couleur TikTok */
+}
+
+.facebook i {
+  color: #3B5998; /* Couleur Facebook */
+}
+
+.instagram i {
+  color: #E4405F; /* Couleur Instagram */
+}
+
+
